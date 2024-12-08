@@ -1,7 +1,12 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate("/account");
+  };
   return (
     <duv>
       {/* Landing Section with Image and Text Side by Side */}
@@ -14,9 +19,12 @@ const Landing = () => {
           Elevate Your Success<br />
           Start Your Dream Job Today
         </h2>
-        <button className="mt-7 px-6 py-2 bg-blue-600 text-white text-lg rounded-lg shadow hover:bg-blue-500">
-          Get Started
-        </button>
+        <button
+              onClick={handleGetStarted}
+              className="mt-7 px-6 py-2 bg-blue-600 text-white text-lg rounded-lg shadow hover:bg-blue-500"
+            >
+              Get Started
+            </button>
         </div>
 
           {/* Image Section (Replace path below with actual image path) */}

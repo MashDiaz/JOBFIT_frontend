@@ -14,13 +14,13 @@ const Navbar = ({ onSignIn }) => {
           </a>
           <a
             href="#account"
-            className="hover:text-blue-600 transition-colors duration-500 ease-in-out"
+            className="text-blue-800 hover:text-blue-600 transition-colors duration-500 ease-in-out"
           >
             Account
           </a>
           <a
             href="#about"
-            className="hover:text-blue-600 transition-colors duration-500 ease-in-out"
+            className="text-blue-800 hover:text-blue-600 transition-colors duration-500 ease-in-out"
           >
             About
           </a>

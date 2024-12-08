@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import Landing from "./pages/Landing";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
+import Account from"./pages/Account"
+import CVLibrary from "./pages/CVLibrary"; 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -30,6 +32,8 @@ const App = () => {
         <Navbar onSignIn={openLoginModal} />
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/account" element={<Account />} />
+          
         </Routes>
         <Footer />
 
