@@ -16,51 +16,17 @@ const CVLibrary = () => {
   return (
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar */}
-      <div className="w-1/4 bg-blue-200 p-6 flex flex-col">
-        <div className="text-center">
-          {/* Profile Picture */}
-          <div className="relative">
-            <div className="w-24 h-24 mx-auto rounded-full bg-blue-400"></div>
-            <button className="absolute top-0 right-10 text-blue-600">
-              <i className="fas fa-bell"></i>
-            </button>
-          </div>
-
-          {/* User Details */}
-          <h2 className="mt-4 text-2xl font-bold text-blue-700">John Doe</h2>
-          <p className="text-lg text-blue-700">Student</p>
-
-          <div className="mt-4 text-left text-blue-700">
-            <p>
-              <strong>Age:</strong> 22
-            </p>
-            <p>
-              <strong>Location:</strong> Western
-            </p>
-            <p>
-              <strong>E-Mail:</strong> johndoe@mail.com
-            </p>
-          </div>
-
-          {/* User Bio */}
-          <div className="mt-4 text-blue-700 bg-blue-100 p-4 rounded-md border-blue-500 border">
-            <p>
-              “Aspiring Data Scientist with 2 years of experience in analytics.
-              Passionate about machine learning and currently seeking
-              opportunities in AI development.”
-            </p>
-          </div>
-        </div>
-
-        {/* Logout Button */}
-        <button className="mt-auto bg-red-500 text-white text-xl py-2 rounded-md hover:bg-red-600">
-          LOG OUT
-        </button>
-      </div>
+      
 
       {/* CV Library */}
-      <div className="w-3/4 bg-green-50 p-8">
-        <div className="flex items-center">
+      <div className="w-full bg-green-200 p-8 mx-2 rounded-lg mb-5 border-green-600 border-2"
+      style={{
+        backgroundImage: "url('cvbg.png')", // Replace with your image path
+        backgroundSize: "cover",  // Makes sure the image covers the entire background
+        backgroundPosition: "center",
+        backgroundColor:"bg-gradient-to-b from-blue-500 to-blue-900 rounded-lg shadow-lg w-[90%] md:w-[1200px] max-h-[92.5%] p-20 overflow-y-auto"  // Keeps the image centered
+      }}>
+        <div className="flex items-center w-full">
           <button className="text-green-600 text-2xl">
             <i className="fas fa-arrow-left"></i>
           </button>
@@ -68,11 +34,11 @@ const CVLibrary = () => {
             CV Library
           </h1>
         </div>
-        <div className="mt-8 max-w-3xl mx-auto space-y-4">
+        <div className="mt-8 max-w-full mx-auto space-y-4">
           {cvs.map((cv) => (
             <div
               key={cv.id}
-              className="flex items-center justify-between bg-green-400 text-white p-4 rounded-md"
+              className="flex items-center justify-between bg-green-400  text-white p-4 rounded-md  shadow-md"
             >
               <div>
                 <p className="text-lg font-medium">{cv.name}</p>

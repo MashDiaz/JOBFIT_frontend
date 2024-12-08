@@ -1,6 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+
+  const handleViewCVs = () => {
+    navigate("/cv-library"); 
+  };
+  const handleAppliedJobs = () => {
+    navigate("/applied-jobs"); 
+  };
+  const handleViewCL = () => {
+    navigate("/cl-library"); 
+  };
+
+
+  const handleGenerateCV = () => {
+    alert("Generate CV functionality coming soon!"); // Placeholder action
+  };
   return (
     <div className="flex min-h-screen bg-gray-900 text-white rounded-lg mt-1 mb-5 mx-1 px-1">
       {/* Sidebar */}
@@ -64,6 +81,8 @@ const Dashboard = () => {
             buttonHoverColor="hover:bg-green-600"
             buttonText1="Generate CV"
             buttonText2="View CVs"
+            onButtonClick1={handleViewCVs}
+            onButtonClick2={handleGenerateCV}// Pass navigation handler
           />
 
           {/* Applied Jobs */}
@@ -79,6 +98,8 @@ const Dashboard = () => {
             buttonHoverColor="hover:bg-purple-600"
             buttonText1="Apply Job"
             buttonText2="View Applied Jobs"
+            onButtonClick1={handleAppliedJobs}
+            onButtonClick2={() => alert("View Applied Jobs functionality coming soon!")}
           />
 
           {/* Total Cover Letters */}
@@ -93,6 +114,11 @@ const Dashboard = () => {
             buttonHoverColor="hover:bg-yellow-600"
             buttonText1="Generate Cover Letters"
             buttonText2="View Cover Letters"
+            onButtonClick1={handleViewCL
+            }
+            onButtonClick2={() =>
+              alert("View Cover Letters functionality coming soon!")
+            }
           />
         </div>
       </div>
@@ -112,6 +138,8 @@ const Card = ({
   buttonHoverColor,
   buttonText1,
   buttonText2,
+  onButtonClick1,
+  onButtonClick2,
 }) => {
     return (
         <div
@@ -159,11 +187,13 @@ const Card = ({
               style={{ flex: 1, height: "180px" }} // Occupies 1/3 of the height
             >
               <button
+              onClick={onButtonClick2}
                 className={`w-full px-4 py-2 rounded-lg shadow ${buttonColor} ${buttonHoverColor} text-white font-bold`}
               >
                 {buttonText1}
               </button>
               <button
+              onClick={onButtonClick1}
                 className={`w-full px-4 py-2 rounded-lg shadow ${buttonColor} ${buttonHoverColor} text-white font-bold`}
               >
                 {buttonText2}
