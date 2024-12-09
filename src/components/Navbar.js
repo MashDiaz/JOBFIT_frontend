@@ -7,19 +7,19 @@ const Navbar = ({ onSignIn }) => {
         <h1 className="text-xl font-bold text-blue-600">JobFit</h1>
         <nav className="ml-4 flex space-x-16">
           <a
-            href="#home"
+            href="home"
             className="text-blue-600 hover:text-blue-600 transition-colors duration-500 ease-in-out"
           >
             Home
           </a>
           <a
-            href="#account"
+            href="account"
             className="text-blue-800 hover:text-blue-600 transition-colors duration-500 ease-in-out"
           >
             Account
           </a>
           <a
-            href="#about"
+            href="about"
             className="text-blue-800 hover:text-blue-600 transition-colors duration-500 ease-in-out"
           >
             About
