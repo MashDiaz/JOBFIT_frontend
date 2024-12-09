@@ -20,7 +20,7 @@ const CoverLetterLibrary = () => {
       {/* Cover Letter Library */}
       <div className="w-full bg-yellow-200 p-4 mx-0 rounded-lg mb-5"
       style={{
-        backgroundImage: "url('coverletterbg.png')", // Replace with your image path
+        backgroundImage: "url('coverletterbg.png') ", // Replace with your image path
         backgroundSize: "cover",  // Makes sure the image covers the entire background
         backgroundPosition: "center",
         backgroundColor:"bg-gradient-to-b from-blue-500 to-blue-900 rounded-lg shadow-lg w-[97%] md:w-[1200px] max-h-[92.5%] p-20 overflow-y-auto"  // Keeps the image centered

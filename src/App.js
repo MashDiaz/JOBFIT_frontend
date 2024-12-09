@@ -8,6 +8,9 @@ import Account from"./pages/Account"
 import CVLibrary from "./pages/CVLibrary"; 
 import AppliedJobs from "./pages/JobLibrary"; 
 import CLLibrary from "./pages/CLLibrary";
+import CVInfo from "./pages/CVinfo";
+import AutoApplyJobs from "./pages/JobApply";
+import CLInfo from"./pages/CLinfo";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -39,7 +42,9 @@ const App = () => {
           <Route path="/cv-library" element={<CVLibrary />} /> {/* Add this */}
           <Route path="/applied-jobs" element={<AppliedJobs />} /> {/* Add this */}
           <Route path="/cl-library" element={<CLLibrary />} /> {/* Add this */}
-          
+          <Route path="/cv-info" element={<CVInfo />} /> {/* Add this */}
+          <Route path="/job-apply" element={<AutoApplyJobs />} /> {/* Add this */}
+          <Route path="/cl-info" element={<CLInfo />} /> {/* Add this */}
         </Routes>
         <Footer />
 

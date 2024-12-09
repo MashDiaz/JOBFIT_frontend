@@ -8,6 +8,7 @@ const Dashboard = () => {
   const handleViewCVs = () => {
     navigate("/cv-library");
   };
+<<<<<<< HEAD
 
   const handleAppliedJobs = () => {
     navigate("/applied-jobs");
@@ -15,10 +16,17 @@ const Dashboard = () => {
 
   const handleViewCL = () => {
     navigate("/cl-library");
+=======
+  const handleJobApply = () => {
+    navigate("/job-apply"); 
+>>>>>>> 28cd2cb64b9c9ac09125bff54b3f1420b3513fde
   };
 
   const handleGenerateCV = () => {
-    alert("Generate CV functionality coming soon!"); // Placeholder action
+    navigate("/cv-info"); // Placeholder action
+  };
+  const handleGenerateCL= () => {
+    navigate("/cl-info"); // Placeholder action
   };
 
   return (
@@ -59,9 +67,13 @@ const Dashboard = () => {
             buttonText1="Apply Job"
             buttonText2="View Applied Jobs"
             onButtonClick1={handleAppliedJobs}
+<<<<<<< HEAD
             onButtonClick2={() =>
               alert("View Applied Jobs functionality coming soon!")
             }
+=======
+            onButtonClick2={handleJobApply}
+>>>>>>> 28cd2cb64b9c9ac09125bff54b3f1420b3513fde
           />
 
           {/* Total Cover Letters */}
@@ -76,9 +88,15 @@ const Dashboard = () => {
             buttonHoverColor="hover:bg-yellow-600"
             buttonText1="Generate Cover Letters"
             buttonText2="View Cover Letters"
+<<<<<<< HEAD
             onButtonClick1={handleViewCL}
             onButtonClick2={() =>
               alert("View Cover Letters functionality coming soon!")
+=======
+            onButtonClick1={handleViewCL
+            }
+            onButtonClick2={handleGenerateCL
+>>>>>>> 28cd2cb64b9c9ac09125bff54b3f1420b3513fde
             }
           />
         </div>
