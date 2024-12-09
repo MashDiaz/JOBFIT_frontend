@@ -13,10 +13,15 @@ const Dashboard = () => {
   const handleViewCL = () => {
     navigate("/cl-library"); 
   };
-
+  const handleJobApply = () => {
+    navigate("/job-apply"); 
+  };
 
   const handleGenerateCV = () => {
-    alert("Generate CV functionality coming soon!"); // Placeholder action
+    navigate("/cv-info"); // Placeholder action
+  };
+  const handleGenerateCL= () => {
+    navigate("/cl-info"); // Placeholder action
   };
   return (
     <div className="flex min-h-screen bg-gray-900 text-white rounded-lg mt-1 mb-5 mx-1 px-1">
@@ -99,7 +104,7 @@ const Dashboard = () => {
             buttonText1="Apply Job"
             buttonText2="View Applied Jobs"
             onButtonClick1={handleAppliedJobs}
-            onButtonClick2={() => alert("View Applied Jobs functionality coming soon!")}
+            onButtonClick2={handleJobApply}
           />
 
           {/* Total Cover Letters */}
@@ -116,8 +121,7 @@ const Dashboard = () => {
             buttonText2="View Cover Letters"
             onButtonClick1={handleViewCL
             }
-            onButtonClick2={() =>
-              alert("View Cover Letters functionality coming soon!")
+            onButtonClick2={handleGenerateCL
             }
           />
         </div>
