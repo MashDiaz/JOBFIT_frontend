@@ -4,7 +4,11 @@ const Navbar = ({ onSignIn }) => {
   return (
     <header className="mx-1 mt-1 mb-2 px-6 h-18 bg-gray-900 shadow-md rounded-md">
       <div className="container mx-auto flex justify-between items-baseline py-1 px-5">
-        <h1 className="text-xl font-bold text-blue-600">JobFit</h1>
+        <h1 className="text-xl font-bold text-blue-600">
+          <a href="home">
+          JobFit
+          </a>
+          </h1>
         <nav className="ml-4 flex space-x-16">
           <a
             href="home"

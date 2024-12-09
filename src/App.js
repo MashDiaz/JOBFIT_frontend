@@ -34,6 +34,7 @@ const App = () => {
         <Navbar onSignIn={openLoginModal} />
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/home" element={<Landing/>}/>
           <Route path="/account" element={<Account />} />
           <Route path="/cv-library" element={<CVLibrary />} /> {/* Add this */}
           <Route path="/applied-jobs" element={<AppliedJobs />} /> {/* Add this */}
