@@ -9,7 +9,7 @@ const AutoApplyJobs = () => {
 
   return (
     <div className="flex flex-col mx-2 bg-white items-center justify-center">
-      {/* Header */}
+      
       <div className="w-full bg-purple-600 p-6 rounded-lg shadow-lg">
         <button className="text-purple-200 text-2xl mb-4">
           <i className="fas fa-arrow-left"></i>
@@ -26,7 +26,7 @@ const AutoApplyJobs = () => {
           subscription is required.
         </p>
 
-        {/* Buttons */}
+        
         <div className="flex justify-center items-center mt-6 space-x-4 mb-3">
           {!isAutoApplyActive ? (
             <button
@@ -56,7 +56,7 @@ const AutoApplyJobs = () => {
         </div>
       </div>
 
-      {/* Suggested Jobs */}
+      
       <div className="w-full mt-2 mb-3 bg-purple-200 p-6 rounded-lg ">
         <h2 className="text-lg font-bold text-purple-700 mb-4">SUGGESTED JOBS</h2>
         <div className="space-y-4">

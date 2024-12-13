@@ -27,13 +27,13 @@ const Dashboard = () => {
 
   return (
     <div className="flex min-h-screen bg-gray-900 text-white rounded-lg mt-1 mb-5 mx-1 px-1">
-      {/* Sidebar */}
+      
       <UserSidebar />
 
-      {/* Main Section */}
+      
       <div className="w-5/6 p-5 space-y-4 rounded-lg ml-auto mr-2 mt-auto mb-auto">
         <div className="grid grid-cols-1 gap-6">
-          {/* Total CV Generated */}
+         
           <Card
             title="Total CV Generated"
             count="23"
@@ -48,7 +48,7 @@ const Dashboard = () => {
             onButtonClick2={handleViewCVs}
           />
 
-          {/* Applied Jobs */}
+          
           <Card
             title="Applied Jobs"
             count="5"
@@ -64,7 +64,7 @@ const Dashboard = () => {
             onButtonClick2={handleAppliedJobs}
           />
 
-          {/* Total Cover Letters */}
+          
           <Card
             title="Total Cover Letters Generated"
             count="23"
@@ -103,7 +103,7 @@ const Card = ({
     <div
       className={`${bgColor} w-full p-6 rounded-lg shadow-lg flex flex-row items-center justify-between gap-4`}
     >
-      {/* Title and Count */}
+      
       <div
         className="flex flex-col items-center justify-center w-1/4 p-4 rounded-md border-white border-2"
         style={{ height: "180px" }}
@@ -117,7 +117,7 @@ const Card = ({
         )}
       </div>
 
-      {/* Description and Buttons */}
+      
       <div className="flex flex-col w-3/4 gap-4">
         <div
           className="w-full flex p-4 rounded-md border-white border-2"

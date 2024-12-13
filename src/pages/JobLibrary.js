@@ -1,25 +1,25 @@
 import React, { useState } from "react";
 
 const CVLibrary = () => {
-  // Sample data for generated CVs
+  
   const [cvs, setCvs] = useState([
     { id: 1, name: "John Doe", company: "ABC Company", size: "344KB" },
     { id: 2, name: "Jane Smith", company: "IPS Company", size: "344KB" },
     { id: 3, name: "Donald Trump", company: "Surge", size: "344KB" },
   ]);
 
-  // Handle CV deletion
+  
   const handleDelete = (id) => {
     setCvs(cvs.filter((cv) => cv.id !== id));
   };
 
   return (
     <div className="flex min-h-screen bg-purple-100 p-6">
-      {/* Main Content */}
+      
       <div className="w-full bg-purple-300 p-8 rounded-lg shadow-lg"
       style={{
-        backgroundImage: "url('jobbg.png')", // Replace with your image path
-        backgroundSize: "cover",  // Makes sure the image covers the entire background
+        backgroundImage: "url('jobbg.png')", 
+        backgroundSize: "cover",  
         backgroundPosition: "center",
         backgroundColor:"bg-gradient-to-b from-blue-500 to-blue-900 rounded-lg shadow-lg w-[90%] md:w-[1200px] max-h-[92.5%] p-20 overflow-y-auto"  // Keeps the image centered
       }}>

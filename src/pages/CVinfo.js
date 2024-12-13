@@ -4,12 +4,12 @@ const CVInfo = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-white">
       <div className="w-full mx-2 bg-green-100 rounded-2xl p-6 shadow-lg relative"style={{
-        backgroundImage: "url('cvbg.png') ", // Replace with your image path
-        backgroundSize: "cover",  // Makes sure the image covers the entire background
+        backgroundImage: "url('cvbg.png') ", 
+        backgroundSize: "cover", 
         backgroundPosition: "center",
         backgroundColor:"bg-gradient-to-b from-blue-500 to-blue-900 rounded-lg shadow-lg w-[97%] md:w-[1200px] max-h-[92.5%] p-20 overflow-y-auto"  // Keeps the image centered
       }}>
-        {/* Back Button */}
+        
         <button
           className="absolute top-4 left-4 text-green-700 hover:text-green-900"
           aria-label="Go back"
@@ -30,14 +30,14 @@ const CVInfo = () => {
           </svg>
         </button>
 
-        {/* Title */}
+        
         <h2 className="text-center text-2xl font-extrabold text-green-700 mb-6">
           CV Generate
         </h2>
 
-        {/* Form */}
+        
         <form className="space-y-6">
-          {/* Job Role */}
+          
           <div>
             <label className="block text-gray-700 font-semibold mb-1">
               Job Role
@@ -46,11 +46,11 @@ const CVInfo = () => {
               className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 p-3"
             >
               <option>Select Your Job Title</option>
-              {/* Add more options as needed */}
+              
             </select>
           </div>
 
-          {/* Skills */}
+          
           <div>
             <label className="block text-gray-700 font-semibold mb-1">
               Skills
@@ -62,7 +62,7 @@ const CVInfo = () => {
             ></textarea>
           </div>
 
-          {/* Experience */}
+         
           <div>
             <label className="block text-gray-700 font-semibold mb-1">
               Experience
@@ -71,11 +71,11 @@ const CVInfo = () => {
               className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 p-3"
             >
               <option>Set Your Experience (Ex: years, months)</option>
-              {/* Add more options as needed */}
+              
             </select>
           </div>
 
-          {/* Education */}
+          
           <div>
             <label className="block text-gray-700 font-semibold mb-1">
               Education
@@ -87,7 +87,7 @@ const CVInfo = () => {
             />
           </div>
 
-          {/* Description */}
+          
           <div>
             <label className="block text-gray-700 font-semibold mb-1">
               Description
@@ -99,7 +99,7 @@ const CVInfo = () => {
             ></textarea>
           </div>
 
-          {/* Generate Button */}
+          
           <button
             type="submit"
             className="w-full bg-green-500 text-white py-3 rounded-md shadow hover:bg-green-600 transition"

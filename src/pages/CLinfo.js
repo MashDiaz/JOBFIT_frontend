@@ -3,13 +3,14 @@ import React from "react";
 const CoverLetterGenerator = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-yellow-300 to-yellow-100 mx-2 rounded-md mb-2">
-      <div className="w-full bg-yellow-200 p-8 rounded-md shadow-lg relative"style={{
-        backgroundImage: "url('coverletterbg.png') ", // Replace with your image path
-        backgroundSize: "cover",  // Makes sure the image covers the entire background
+      <div className="w-full bg-yellow-200 p-8 rounded-md shadow-lg relative"
+      style={{
+        backgroundImage: "url('coverletterbg.png') ", 
+        backgroundSize: "cover",  
         backgroundPosition: "center",
         backgroundColor:"bg-gradient-to-b from-blue-500 to-blue-900 rounded-lg shadow-lg w-[97%] md:w-[1200px] max-h-[92.5%] p-20 overflow-y-auto"  // Keeps the image centered
       }}>
-        {/* Back Button */}
+        
         <button
           className="absolute top-4 left-4 text-yellow-600 hover:text-yellow-800"
           aria-label="Go back"
@@ -30,14 +31,14 @@ const CoverLetterGenerator = () => {
           </svg>
         </button>
 
-        {/* Title */}
+       
         <h1 className="text-center text-3xl font-bold text-yellow-600 mb-8">
           Cover Letter Generate
         </h1>
 
-        {/* Form */}
+       
         <form className="space-y-6">
-          {/* Company Name */}
+          
           <div>
             <label className="block text-yellow-800 font-semibold mb-2">
               Company Name
@@ -49,7 +50,7 @@ const CoverLetterGenerator = () => {
             />
           </div>
 
-          {/* Job Title */}
+          
           <div>
             <label className="block text-yellow-800 font-semibold mb-2">
               Job Title
@@ -61,7 +62,7 @@ const CoverLetterGenerator = () => {
             />
           </div>
 
-          {/* Hiring Manager's Name */}
+          
           <div>
             <label className="block text-yellow-800 font-semibold mb-2">
               Hiring Manager's Name (Optional)
@@ -73,7 +74,7 @@ const CoverLetterGenerator = () => {
             />
           </div>
 
-          {/* Relevant Skills */}
+          
           <div>
             <label className="block text-yellow-800 font-semibold mb-2">
               Relevant Skills
@@ -85,7 +86,7 @@ const CoverLetterGenerator = () => {
             ></textarea>
           </div>
 
-          {/* Experience/Projects */}
+          
           <div>
             <label className="block text-yellow-800 font-semibold mb-2">
               Experience/Projects
@@ -97,7 +98,7 @@ const CoverLetterGenerator = () => {
             ></textarea>
           </div>
 
-          {/* Reason for Applying */}
+          
           <div>
             <label className="block text-yellow-800 font-semibold mb-2">
               Reason for Applying
@@ -109,7 +110,7 @@ const CoverLetterGenerator = () => {
             ></textarea>
           </div>
 
-          {/* Generate Button */}
+          
           <button
             type="submit"
             className="w-full bg-yellow-500 text-white py-3 rounded-md shadow hover:bg-yellow-600 transition"

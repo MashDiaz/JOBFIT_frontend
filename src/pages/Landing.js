@@ -9,10 +9,10 @@ const Landing = () => {
   };
   return (
     <duv>
-      {/* Landing Section with Image and Text Side by Side */}
+      
       <section className="bg-white py-6 px-12 mt-1">
         <div className="container mx-auto flex justify-between items-center">
-          {/* Text Content Section */}
+          
           <div className="w-1/2">
         <h2 className="text-3xl font-bold text-blue-600">
           Simplify the Search<br />
@@ -27,14 +27,14 @@ const Landing = () => {
             </button>
         </div>
 
-          {/* Image Section (Replace path below with actual image path) */}
+          
           <div className="w-1/2">
             <img src="/bg img.png" alt="Animated Illustration" className="w-64 h-64 ml-auto" />
           </div>
         </div>
       </section>
 
-      {/* JobFit Process */}
+      
       
       <h3 className="text-inter text-xl font-bold text-center text-blue-600 mb-2 mx-1 py-1  bg-transparent border-2 border-[#43a3fd] p-3 rounded-md">
           JobFit Process
@@ -58,7 +58,7 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* JobFit Tools */}
+      
       <section className="bg-transparent py-12">
       <h3 className="text-inter text-xl font-bold text-center text-blue-600 mb-2 mx-1 py-1  bg-transparent border-2 border-[#43a3fd] p-3 rounded-md">
           JobFit Tools
@@ -84,7 +84,7 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* Insights */}
+      
       <section className="container mx-auto py-12">
       <h3 className="text-inter text-xl font-bold text-center text-blue-600 mb-2 mx-1 py-1  bg-transparent border-2 border-[#43a3fd] p-3 rounded-md">
           Insights
@@ -108,7 +108,7 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* Subscription */}
+      
       <section className="bg-pink-100 py-12 text-center">
         <h3 className="text-2xl font-bold text-pink-700 mb-4">
           Auto-Apply Jobs Subscription Plan

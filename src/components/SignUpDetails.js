@@ -7,15 +7,15 @@ const SignUpDetails = ({ isOpen, onClose }) => {
   return (
     <CSSTransition
       in={isOpen}
-      timeout={300} // Transition duration
+      timeout={300} 
       classNames="popup"
       unmountOnExit
     >
     <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 ">
       <div className="bg-gradient-to-b from-blue-500 to-blue-900 rounded-lg shadow-lg w-[90%] md:w-[1200px] max-h-[92.5%] p-20 overflow-y-auto"
       style={{
-        backgroundImage: "url('detailsbg (1).png')", // Replace with your image path
-        backgroundSize: "cover",  // Makes sure the image covers the entire background
+        backgroundImage: "url('detailsbg (1).png')", 
+        backgroundSize: "cover",  
         backgroundPosition: "center",
         backgroundColor:"bg-gradient-to-b from-blue-500 to-blue-900 rounded-lg shadow-lg w-[90%] md:w-[1200px] max-h-[92.5%] p-20 overflow-y-auto"  // Keeps the image centered
       }}>
@@ -32,9 +32,9 @@ const SignUpDetails = ({ isOpen, onClose }) => {
             Welcome to <span className="font-extrabold">JobFit</span>
           </h2>
 
-          {/* Sign Up Details Form */}
+         
           <form className="space-y-3">
-            {/* Full Name */}
+            
             <div>
               <label className="block text-gray-700 font-medium mb-1">
                 Full Name
@@ -46,7 +46,7 @@ const SignUpDetails = ({ isOpen, onClose }) => {
               />
             </div>
 
-            {/* Email */}
+           
             <div>
               <label className="block text-gray-700 font-medium mb-1">
                 E-Mail
@@ -58,7 +58,7 @@ const SignUpDetails = ({ isOpen, onClose }) => {
               />
             </div>
 
-            {/* Birthday */}
+          
             <div className="grid grid-cols-3 gap-2">
               <div>
                 <label className="block text-gray-700 font-medium mb-1">
@@ -92,7 +92,7 @@ const SignUpDetails = ({ isOpen, onClose }) => {
               </div>
             </div>
 
-            {/* Location */}
+            
             <div className="grid grid-cols-3 gap-2">
               <div>
                 <label className="block text-gray-700 font-medium mb-1">
@@ -126,7 +126,7 @@ const SignUpDetails = ({ isOpen, onClose }) => {
               </div>
             </div>
 
-            {/* Other Fields */}
+            
             <div>
               <label className="block text-gray-700 font-medium mb-1">
                 Current Status
@@ -193,7 +193,7 @@ const SignUpDetails = ({ isOpen, onClose }) => {
               ></textarea>
             </div>
 
-            {/* Terms and Conditions */}
+            
             <div className="flex items-center space-x-2">
               <input
                 type="checkbox"
@@ -205,7 +205,7 @@ const SignUpDetails = ({ isOpen, onClose }) => {
               </label>
             </div>
 
-            {/* Get Started Button */}
+            
             <button
               type="submit"
               className="w-full bg-blue-600 text-white py-2 px-4 rounded-md shadow hover:bg-blue-700 transition"

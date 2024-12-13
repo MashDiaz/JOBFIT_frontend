@@ -15,13 +15,13 @@ const CoverLetterLibrary = () => {
 
   return (
     <div className="flex min-h-screen bg-yellow-100 p-6">
-      {/* Sidebar (optional, not needed for this component) */}
+      
 
       {/* Cover Letter Library */}
       <div className="w-full bg-yellow-200 p-4 mx-0 rounded-lg mb-5"
       style={{
-        backgroundImage: "url('coverletterbg.png') ", // Replace with your image path
-        backgroundSize: "cover",  // Makes sure the image covers the entire background
+        backgroundImage: "url('coverletterbg.png') ", 
+        backgroundSize: "cover",  
         backgroundPosition: "center",
         backgroundColor:"bg-gradient-to-b from-blue-500 to-blue-900 rounded-lg shadow-lg w-[97%] md:w-[1200px] max-h-[92.5%] p-20 overflow-y-auto"  // Keeps the image centered
       }}>
@@ -44,14 +44,14 @@ const CoverLetterLibrary = () => {
                 <p className="text-sm">{letter.size}</p>
               </div>
               <div className="flex space-x-4">
-                {/* Download Button */}
+                
                 <button
                   className="bg-yellow-600 px-4 py-2 rounded-md hover:bg-yellow-700"
                   onClick={() => alert(`Downloading ${letter.name}`)}
                 >
                   <i className="fas fa-download"></i>
                 </button>
-                {/* Delete Button */}
+                
                 <button
                   className="bg-red-500 px-4 py-2 rounded-md hover:bg-red-600"
                   onClick={() => handleDelete(letter.id)}

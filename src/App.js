@@ -11,6 +11,7 @@ import CLLibrary from "./pages/CLLibrary";
 import CVInfo from "./pages/CVinfo";
 import AutoApplyJobs from "./pages/JobApply";
 import CLInfo from"./pages/CLinfo";
+import AdminDashboard from "./pages/Admin";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -39,23 +40,24 @@ const App = () => {
           <Route path="/" element={<Landing />} />
           <Route path="/home" element={<Landing/>}/>
           <Route path="/account" element={<Account />} />
-          <Route path="/cv-library" element={<CVLibrary />} /> {/* Add this */}
-          <Route path="/applied-jobs" element={<AppliedJobs />} /> {/* Add this */}
-          <Route path="/cl-library" element={<CLLibrary />} /> {/* Add this */}
-          <Route path="/cv-info" element={<CVInfo />} /> {/* Add this */}
-          <Route path="/job-apply" element={<AutoApplyJobs />} /> {/* Add this */}
-          <Route path="/cl-info" element={<CLInfo />} /> {/* Add this */}
+          <Route path="/cv-library" element={<CVLibrary />} /> 
+          <Route path="/applied-jobs" element={<AppliedJobs />} /> 
+          <Route path="/cl-library" element={<CLLibrary />} /> 
+          <Route path="/cv-info" element={<CVInfo />} /> 
+          <Route path="/job-apply" element={<AutoApplyJobs />} /> 
+          <Route path="/cl-info" element={<CLInfo />} /> 
+          <Route path="/admin" element={<AdminDashboard />} /> 
         </Routes>
         <Footer />
 
-        {/* Login Modal */}
+        
         <Login
           isOpen={isLoginOpen}
           onClose={closeLoginModal}
           onSignUp={openSignUpModal}
         />
 
-        {/* Sign Up Modal */}
+        
         <SignUp
           isOpen={isSignUpOpen}
           onClose={closeSignUpModal}
