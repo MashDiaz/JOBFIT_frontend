@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import UserSidebar from "../components/UserSidebar";
+import Navbar from "../components/NavbarAc";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -27,7 +28,6 @@ const Dashboard = () => {
 
   return (
     <div className="flex min-h-screen bg-gray-900 text-white rounded-lg mt-1 mb-5 mx-1 px-1">
-      
       <UserSidebar />
 
       
